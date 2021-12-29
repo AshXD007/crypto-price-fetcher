@@ -1,0 +1,98 @@
+body {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  border: none;
+}
+.title {
+  font-family: "PT Sans Narrow", -apple-system, BlinkMacSystemFont;
+  font-size: 2rem;
+  color: antiquewhite;
+}
+.searchArea {
+  display: flex;
+  align-items: center;
+}
+#searchBar {
+  border-radius: 9px;
+  border: none;
+  width: 25vw;
+  line-height: 1.55em;
+}
+#searchBtn {
+  filter: invert(100);
+  margin-left: 6px;
+}
+.portfolioBtn {
+  font-family: "Inter", BlinkMacSystemFont;
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 1.15em;
+}
+.portfolioBtn img {
+  filter: invert(100);
+  align-self: center;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  width: 70vw;
+  margin-top: 1rem;
+  background: #C0C781;
+  border-radius: 20px;
+}
+
+.coinBar{
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid black;
+  background-color: #c7caa8 ;
+  border-radius: 7px;
+}
+.coinLogo{
+  width: 5vw;
+  height: 5vh;
+  align-self: center;
+}
+.coinName{
+  flex-grow: 3;
+}
+.coinPrice{
+  flex-grow: 2;
+}
+.priceChange{
+  flex-grow: 1;
+}
+.textInBar{
+  font-family: "Inter", BlinkMacSystemFont;
+  font-size: larger;
+}
+@media all and (max-width: 600px){
+  .textInBar{
+    font-size: smaller;
+  }
+  .textTop{
+    font-size: smaller;
+  }
+}
